@@ -21,7 +21,7 @@
         throw createError({statusCode:404, statusMessage: 'Product not found', fatal:true})
     }
     definePageMeta({
-        layout: 'products'
+        layout: 'camshop'
     });
 </script>
 

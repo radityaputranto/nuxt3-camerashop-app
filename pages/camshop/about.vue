@@ -9,6 +9,9 @@
 </template>
 
 <script setup>
+    definePageMeta({
+        layout: 'camshop'
+    });
     const {data} = await useFetch('/api/ninja?name=mario', { method: 'post', body: {age: 30}})
     //const data = await useFetch('/api/ninja')
     //const currencies = await useFetch('/api/currencies')

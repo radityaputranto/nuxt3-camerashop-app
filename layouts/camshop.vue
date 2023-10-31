@@ -5,7 +5,13 @@
                 <NuxtLink to="/" class="font-bold">Learn Nuxt3</NuxtLink>
                 <ul class="flex gap-4">
                     <li>
-                        <NuxtLink to="/logout" class="btn">Logout</NuxtLink>
+                        <NuxtLink to="/camshop">Home</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/camshop/about">About</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/camshop/products" class="btn">Products</NuxtLink>
                     </li>
                 </ul>
             </nav>
@@ -18,10 +24,15 @@
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup>
+    useHead({
+        title: 'Camshop Nuxt3',
+        meta : [
+            {
+                name: 'description', content:'camshop nuxt3 by Raditya Putranto'
+            }
+        ]
+    });
 </script>
 
 <style scoped>

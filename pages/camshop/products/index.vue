@@ -7,21 +7,22 @@
             </div>
         </div>
     </div>
+    
 </template>
 
 <script setup>
     definePageMeta({
-        layout: 'products'
+        layout: 'camshop'
     });
 
     // fetch the products
     const {data: products} = await useFetch('https://fakestoreapi.com/products')
-
+    
     useHead({
-        title: 'Nuxt Merch',
+        title: 'Learn Nuxt3',
         meta : [
             {
-                name: 'description', content:'camshop product list'
+                name: 'description', content:'learn nuxt3 by Raditya Putranto'
             }
         ]
     });
