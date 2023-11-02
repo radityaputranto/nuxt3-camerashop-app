@@ -1,19 +1,31 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.8.1",
-    "nuxt": "^3.8.0",
-    "vue": "^3.3.7",
-    "vue-router": "^4.2.5"
-  }
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+        "lint:prettier": "prettier --check .",
+        "lint": "npm lint:js && npm lint:prettier",
+        "lintfix": "prettier --write --list-different . && npm lint:js --fix"
+    },
+    "devDependencies": {
+        "@nuxt/devtools": "latest",
+        "@nuxtjs/tailwindcss": "^6.8.1",
+        "nuxt": "^3.8.0",
+        "vue": "^3.3.7",
+        "vue-router": "^4.2.5"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.1",
+        "eslint": "^8.52.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "pinia": "^2.1.7",
+        "prettier": "^3.0.3"
+    }
 }

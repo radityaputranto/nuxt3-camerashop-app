@@ -10,13 +10,18 @@
 </template>
 
 <script>
-definePageMeta({
-  layout: "camshop",
-});
+import { useTaskStore } from "@/stores/TaskStore";
+
 export default {
-  middleware: "auth",
-  // ...
+  setup() {
+    const taskStore = useTaskStore();
+
+    return { taskStore };
+  },
 };
+definePageMeta({
+  layout: "pinia",
+});
 </script>
 
 <style scoped>
