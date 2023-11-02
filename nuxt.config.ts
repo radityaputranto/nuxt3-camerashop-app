@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
     app: {
         head: {
-            title: "CamShop Nuxt3",
+            title: "Learn Nuxt3",
             meta: [{ name: "description", content: "everything about nuxt3" }],
             link: [
                 {
