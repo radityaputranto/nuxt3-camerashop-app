@@ -13,6 +13,7 @@ export default defineNuxtConfig({
                 },
             ],
         },
+        pageTransition: { name: "page", mode: "out-in" },
     },
     runtimeConfig: {
         currencyKey: process.env.CURRENCY_API_KEY,

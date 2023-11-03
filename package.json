@@ -25,6 +25,7 @@
         "eslint": "^8.52.0",
         "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-prettier": "^5.0.1",
+        "gsap": "^3.12.2",
         "pinia": "^2.1.7",
         "prettier": "^3.0.3"
     }

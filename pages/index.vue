@@ -4,7 +4,7 @@
     <div
       class="grid grid-cols-1 md:grid-cols-6 place-content-center gap-4 mt-4"
     >
-      <div v-for="item in getMenu" :key="item.id">
+      <div v-for="item in menu" :key="item.id">
         <NuxtLink :to="item.url" class="card shadow text-center">
           <i class="material-icons mr-2">{{ item.icon }}</i>
           {{ item.name }}
@@ -14,16 +14,29 @@
   </div>
 </template>
 
-<script>
-import { useMenuStore } from "@/stores/menu";
-
-export default defineComponent({
-  setup() {
-    const store = useMenuStore();
-    const getMenu = computed(() => store.getMenu);
-    return { getMenu };
+<script setup>
+const menu = [
+  {
+    name: "camshop",
+    icon: "computer",
+    url: "/camshop",
   },
-});
+  {
+    name: "pinia",
+    icon: "more_time",
+    url: "/pinia",
+  },
+  {
+    name: "counter",
+    icon: "more_time",
+    url: "/counter",
+  },
+  {
+    name: "animation",
+    icon: "more_time",
+    url: "/animation",
+  },
+];
 </script>
 
 <style scoped>
