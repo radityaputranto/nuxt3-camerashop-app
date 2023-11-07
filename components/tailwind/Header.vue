@@ -16,24 +16,19 @@
 <script setup>
 const menu = [
   {
-    name: "camshop",
-    url: "/camshop",
-  },
-  {
-    name: "pinia",
-    url: "/pinia",
-  },
-  {
-    name: "counter",
-    url: "/counter",
-  },
-  {
-    name: "animation",
-    url: "/animation",
-  },
-  {
-    name: "tailwind",
+    name: "home",
     url: "/tailwind",
+  },
+  {
+    name: "dark light mode",
+    url: "/tailwind/dark-light",
   },
 ];
 </script>
+
+<style scoped>
+.router-link-exact-active {
+  color: #12b488;
+  font-weight: 600;
+}
+</style>
