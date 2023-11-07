@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <TailwindHeader></TailwindHeader>
     <section class="mb-10 bg-indigo-200">
       <h2 class="mb-4 font-bold text-2xl">Spacing</h2>
       <div class="m-15 bg-red-200">Margin</div>

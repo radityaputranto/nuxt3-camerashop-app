@@ -1,7 +1,8 @@
 <template>
   <main>
     <!-- heading -->
-    <header>
+    <BaseHeader></BaseHeader>
+    <header class="pb-6">
       <img src="https://pinia.vuejs.org/logo.svg" alt="pinia logo" />
       <h1>Pinia Tasks</h1>
     </header>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="new-task-form">
-      <TaskForm />
+      <PiniaForm />
     </div>
     <h2>Hello {{ taskStore.name }}</h2>
 
@@ -15,14 +15,14 @@
     <div class="task-list" v-if="filter === 'all'">
       <h5 class="font-bold">All Task : {{ totalCount }}</h5>
       <div v-for="task in tasks" :key="task.id">
-        <TaskDetail :task="task"></TaskDetail>
+        <PiniaDetail :task="task"></PiniaDetail>
       </div>
     </div>
 
     <div class="task-list" v-if="filter === 'favs'">
       <h5 class="font-bold mt-4">Favorites Task : {{ favCount }}</h5>
       <div v-for="task in favs" :key="task.id">
-        <TaskDetail :task="task"></TaskDetail>
+        <PiniaDetail :task="task"></PiniaDetail>
       </div>
     </div>
 

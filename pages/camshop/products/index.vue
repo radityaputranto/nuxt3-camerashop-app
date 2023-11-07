@@ -3,7 +3,7 @@
     <h1 class="font-bold">Products</h1>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="item in products" :key="item.id">
-        <ProductCard :product="item" />
+        <CamshopCard :product="item" />
       </div>
     </div>
   </div>

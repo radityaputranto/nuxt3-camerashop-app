@@ -1,5 +1,6 @@
 <template>
   <div>
+    <BaseHeader></BaseHeader>
     <div id="nav">
       <NuxtLink to="/animation/">Home</NuxtLink> |
       <NuxtLink to="/animation/about">About</NuxtLink> |

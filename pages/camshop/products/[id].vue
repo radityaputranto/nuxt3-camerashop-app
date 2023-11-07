@@ -4,7 +4,7 @@
       <Title> Camshop | {{ product.title }} </Title>
       <Meta name="description" :content="product.description" />
     </Head>
-    <ProductDetail :product="product" />
+    <CamshopDetail :product="product" />
   </div>
 </template>
 
