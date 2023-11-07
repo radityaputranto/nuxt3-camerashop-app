@@ -36,6 +36,11 @@ const menu = [
     icon: "more_time",
     url: "/animation",
   },
+  {
+    name: "tailwind",
+    icon: "more_time",
+    url: "/tailwind",
+  },
 ];
 </script>
 
