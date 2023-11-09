@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-20">
     <h1 class="font-bold text-6xl">Learn TailwindCSS</h1>
     <nav>
       <ul>
@@ -10,6 +10,7 @@
         </li>
       </ul>
     </nav>
+    <hr />
   </div>
 </template>
 
@@ -22,6 +23,14 @@ const menu = [
   {
     name: "dark light mode",
     url: "/tailwind/dark-light",
+  },
+  {
+    name: "layout",
+    url: "/tailwind/layout",
+  },
+  {
+    name: "grid",
+    url: "/tailwind/grid",
   },
 ];
 </script>

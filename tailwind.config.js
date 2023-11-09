@@ -24,7 +24,22 @@ export default {
       colors: {
         radit: '#30B7FA',
         night: '#0E1D31',
-        sunset: ''
+        sunset: '',
+        tema: 'rgb(var(--var-tema/<alpha-value>)',
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'wiggle-slow': 'wiggle 1s ease-in-out infinite'
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': {
+            transform: 'rotate(-3deg)'
+          },
+          '50%': {
+            transform: 'rotate(3deg)'
+          }
+        }
       }
     },
   },

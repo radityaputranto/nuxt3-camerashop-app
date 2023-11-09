@@ -1,3 +1,12 @@
+:root {
+    --warna-ungu: 168 85 247;
+    --warna-pink: 236 72 153;
+    --warna-biru: 2 132 199;
+    --warna-orange: 249 115 22;
+
+    --warna-tema: var(--warna-ungu);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,11 +15,29 @@ body {
     @apply bg-gray-50;
 }
 
+@layer base {
+    h2 {
+        @apply text-8xl;
+        color: theme(colors.radit);
+    }
+}
+
 @layer components {
     .btn {
         @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-center;
     }
     .card {
         @apply p-3 rounded-md bg-white shadow-md h-full;
+    }
+    /* group cannot use 'group' in css */
+    .grid-card {
+        @apply w-full bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+    }
+    .photo-card {
+        @apply w-full h-full bg-cover bg-center absolute transition-all duration-500;
+    }
+    .square {
+        @apply w-[100px] h-[100px] m-1;
+        background-color: theme(colors.radit / 50%);
     }
 }

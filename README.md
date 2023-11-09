@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Tailwind
+
+```bash
+npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch
+```

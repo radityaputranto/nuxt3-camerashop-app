@@ -59,6 +59,24 @@
         </label>
       </form>
     </div>
+    <hr />
+
+    <div
+      class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-180 hover:bg-pink-500 transition origin-top-left"
+    ></div>
+    <div class="w-40 h-40 mx-auto mt-20 group">
+      <div
+        class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000"
+      ></div>
+    </div>
+
+    <div
+      class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-spin-slow"
+    ></div>
+
+    <div
+      class="w-40 h-40 bg-yellow-500 mx-auto rounded-lg shadow-lg mt-20 animate-wiggle-slow"
+    ></div>
   </div>
 </template>
 
