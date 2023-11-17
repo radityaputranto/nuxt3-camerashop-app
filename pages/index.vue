@@ -41,6 +41,11 @@ const menu = [
     icon: "more_time",
     url: "/tailwind",
   },
+  {
+    name: "dashboard",
+    icon: "more_time",
+    url: "/dashboard",
+  },
 ];
 </script>
 
